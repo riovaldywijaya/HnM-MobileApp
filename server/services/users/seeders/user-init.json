@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "username": "admin1",
+    "email": "admin1@mail.com",
+    "password": "admin1",
+    "role": "admin",
+    "phoneNumber": "082123456789",
+    "address": "Jl. di mana aja boleh, Bandung"
+  },
+  {
+    "id": 2,
+    "username": "admin2",
+    "email": "admin2@mail.com",
+    "password": "admin2",
+    "role": "admin",
+    "phoneNumber": "082223456789",
+    "address": "Jl. di mana-mana, Jakarta"
+  },
+  {
+    "id": 3,
+    "email": "ronaldo@mail.com",
+    "password": "ronaldo",
+    "role": "admin",
+    "username": "Christiano Ronaldo",
+    "phoneNumber": "082123456789",
+    "address": "jl. di mana aja boleh kok"
+  }
+]

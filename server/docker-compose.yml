@@ -1,0 +1,25 @@
+services:
+  orchestrator:
+    image: orchestrator
+    build: ./orchestrator
+    ports:
+      - '80:4000'
+    environment:
+      PASSWORD_REDISLABS: ${PASSWORD_REDISLABS}
+      NODE_ENV: ${NODE_ENV}
+  users-service:
+    image: users-service
+    build: ./services/users
+    ports:
+      - '4001:4001'
+    environment:
+      URI_MONGO_ATLAS: ${URI_MONGO_ATLAS}
+      NODE_ENV: ${NODE_ENV}
+  app-service:
+    image: app-service
+    build: ./services/app
+    ports:
+      - '4002:4002'
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      NODE_ENV: ${NODE_ENV}
